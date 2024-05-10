@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.concert-one {
+    font-family: "Concert One", sans-serif;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -8,13 +20,13 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Permanent Marker";
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --bg-color: #0B0B0D;
+    --bg-color: #f2f2f5;
     --second-bg-color: #021373;
-    --text-color: #D0D7D9;
+    --text-color: #141414;
     --main-color: #044BD9;
 }
 
@@ -27,7 +39,8 @@ body {
     background: var(--bg-color);
     font-family: "Permanent Marker";
     color: var(--text-color);
-    
+    overflow-x: hidden;
+
 }
 
 html::-webkit-scrollbar {
@@ -48,7 +61,7 @@ html::-webkit-scrollbar-thumb {
     left: 0;
     width: 100%;
     padding: 3rem 9%;
-    background: #0b0b0dbb;
+    background: #efeeeebb;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -192,7 +205,7 @@ span {
 }
 
 .social-icon a:hover {
-    color: black;
+    color: rgb(255, 253, 253);
     transform: scale(1.3)translateY(-5px);
     background: var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
@@ -214,7 +227,7 @@ span {
 .btn:hover {
     transform: scale(1.03);
     background-color: var(--main-color);
-    color: black;
+    color: rgb(251, 249, 249);
     box-shadow: 0 0 25px var(--main-color);
 }
 
@@ -260,7 +273,7 @@ span {
 
     21%,
     40% {
-        content: 'Desarrollador Software';
+        content: 'Desarroll. Software';
     }
 
     41%,
@@ -356,8 +369,8 @@ span {
 }
 
 .services-box {
-    background-color: var(--main-color);
-    height: 300px;
+    background-color: #4579f0;
+    height: 345px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -365,7 +378,6 @@ span {
 
 .services-box:hover {
     background: transparent;
-    color: var(--text-color);
     transform: scale(1.03);
     border: 1px solid var(--main-color);
 }
@@ -374,7 +386,7 @@ span {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
+    max-height: 250px;
     justify-content: center;
     align-items: center;
     padding: 5em;
@@ -382,7 +394,7 @@ span {
 
 .services-info h4 {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
@@ -392,6 +404,7 @@ span {
     max-height: 100px;
     margin: auto;
 }
+
 
 @media (max-width: 991px) {
     .section {
@@ -420,7 +433,7 @@ span {
 }
 
 .skills .container {
-    background: #1f295e5e;
+    background: rgba(215, 215, 215, 0.553);
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
@@ -499,7 +512,7 @@ span {
     content: '';
     position: absolute;
     width: 6px;
-    background: rgb(183, 7, 7);
+    background: rgb(226, 17, 17);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -562,7 +575,7 @@ span {
     top: 22px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 31px;
     border: medium solid var(--main-color);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--main-color) transparent transparent;
@@ -592,12 +605,13 @@ span {
 .education .content .tag h2 {
     font-size: 2.5rem;
     font-weight: 600;
-    color: black;
+    color: rgb(252, 249, 249);
 }
 
 .education .content .decs p {
     font-size: 1.3rem;
     font-weight: 500;
+    color: #f2f2f5;
 }
 
 @media screen and (max-width:600px) {
@@ -642,10 +656,9 @@ span {
 
 /* Contact  */
 
-
 .contact h2 {
     margin-bottom: 3rem;
-    color: white;
+    color: rgb(3, 3, 3);
 }
 
 .contact form {
@@ -698,13 +711,13 @@ span {
 .footer .social {
     text-align: center;
     padding-bottom: 25px;
-    color: black;
+    color: rgb(252, 250, 250);
 }
 
 .footer .social a {
     font-size: 25px;
-    color: black;
-    border: 2px solid black;
+    color: rgb(253, 251, 251);
+    border: 2px solid rgb(255, 254, 254);
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -717,7 +730,7 @@ span {
 
 .footer .social a:hover {
     transform: scale(1.2)translateY(-5px);
-    background: black;
+    background: rgb(253, 252, 252);
     color: var(--main-color);
 }
 
@@ -735,30 +748,31 @@ span {
     padding: 0 15px;
 }
 
-.footer ul li a{
-    color: black;
+.footer ul li a {
+    color: rgb(255, 253, 253);
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
 
-.footer ul li a:hover{
-    border-bottom: 3px solid black;
+.footer ul li a:hover {
+    border-bottom: 3px solid rgb(253, 252, 252);
 }
 
 .footer .copyright {
     margin-top: 50px;
     text-align: center;
     font-size: 16px;
-    color: black;
+    color: rgb(254, 251, 251);
 }
 
 @media (max-width:1285px) {
     html {
         font-size: 55%;
     }
+
     .services-container {
         padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
 }
@@ -767,12 +781,15 @@ span {
     .header {
         padding: 2rem 3%;
     }
+
     section {
         padding: 10rem 3% 2rem;
     }
+
     .services {
         padding-bottom: 7rem;
     }
+
     .footer {
         padding: 2rem 3%;
     }
@@ -782,7 +799,8 @@ span {
     .services h2 {
         margin-bottom: 3rem;
     }
+
     .services-container {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
